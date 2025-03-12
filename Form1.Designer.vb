@@ -30,6 +30,7 @@ Partial Class Form1
         addend2 = New TextBox()
         Label1 = New Label()
         ans = New TextBox()
+        Button5 = New Button()
         SuspendLayout()
         ' 
         ' addend1
@@ -98,11 +99,21 @@ Partial Class Form1
         ans.Size = New Size(125, 38)
         ans.TabIndex = 7
         ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(782, 570)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(150, 46)
+        Button5.TabIndex = 8
+        Button5.Text = "Exit"
+        Button5.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(14F, 31F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(995, 653)
+        Controls.Add(Button5)
         Controls.Add(ans)
         Controls.Add(Label1)
         Controls.Add(addend2)
@@ -125,5 +136,6 @@ Partial Class Form1
     Friend WithEvents addend2 As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ans As TextBox
+    Friend WithEvents Button5 As Button
 
 End Class

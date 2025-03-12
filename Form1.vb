@@ -3,6 +3,9 @@
         If addend1.Text = "" Or addend2.Text = "" Then
             MsgBox("Please enter a number in both boxes")
         End If
+        If Not (IsNumeric(addend1)) Or Not (IsNumeric(addend2)) Then
+            MsgBox("Please enter a VALID number in both boxes")
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -30,5 +33,7 @@
         ans.Text = Val(addend1.Text) / Val(addend2.Text)
     End Sub
 
-
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        End
+    End Sub
 End Class
