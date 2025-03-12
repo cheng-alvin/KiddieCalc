@@ -22,6 +22,11 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Check()
+        If addend2.Text = "0" Then
+            MsgBox("Cannot divide by zero")
+            Exit Sub
+        End If
+
         ans.Text = Val(addend1.Text) / Val(addend2.Text)
     End Sub
 
