@@ -44,6 +44,7 @@
             Exit Sub
         End If
 
+        ' Handle edge case
         If addend2.Text = "0" Then
             MsgBox("Cannot divide by zero")
             Exit Sub
@@ -55,5 +56,11 @@
     ' Exits process
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         End
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        addend1.Text = ""
+        addend2.Text = ""
+        ans.Text = ""
     End Sub
 End Class
